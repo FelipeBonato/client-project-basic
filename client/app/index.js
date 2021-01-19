@@ -39,9 +39,13 @@ document.querySelector('.form').addEventListener('submit', function(event){
     tbody.appendChild(tr);
     console.log(tbody)
 
+    //limpa o campo da data 
     campos[0].value = '';
+    //limpa o campo da quantidade    
     campos[1].value = '1';
+    //limpa o campo do valor
     campos[2].value = '0';
+    // foca no campo data
     campos[0].focus();
     
 });
