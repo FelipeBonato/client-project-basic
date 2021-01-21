@@ -9,7 +9,7 @@ console.log(campos); // Verificando o conteúdo da Array
 //precisamos de tbory, pois ele receberá a tr que vamos construir
 var tbody = document.querySelector('table tbody');
 
-// buscar oformulário através da classe .form e associa com a funcao de evento submit, que será chamada quando o usuário submiter o formulário
+// buscar o formulário através da classe .form e associa com a funcao de evento submit, que será chamada quando o usuário submiter o formulário
 document.querySelector('.form').addEventListener('submit', function(event){
 
     //cancelando a submissão do formulário(submit atualizaa página e zera os dados)
@@ -35,7 +35,7 @@ document.querySelector('.form').addEventListener('submit', function(event){
     // adicionando a td que faltava à tr
     tr.appendChild(tdVolume);
 
-    // adicionando a tr
+    // acrescentando a tr
     tbody.appendChild(tr);
     console.log(tbody)
 
