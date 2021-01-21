@@ -1,15 +1,14 @@
 class Negociacao {
 
-    constructor(data, quantidade, valor) {
+    constructor(_data, _quantidade, _valor) {
 
-    // underline regra e um aviso de usar métodos da própria classe
-        this._data = new Date(data.getTime());
-        this._quantidade = quantidade;
-        this._valor = valor;
+        Object.assign(this, { _quantidade, _valor });
+        this._data = new Date(_data.getTime());
         Object.freeze(this);  // congelando instância no constructor
     }
-    get volume() {
 
+
+    get volume() {
         return this._quantidade * this._valor;
     }
 
